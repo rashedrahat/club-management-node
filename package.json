@@ -1,0 +1,23 @@
+{
+	"name": "simple-club-management-app-worksober-task-back-end",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "json-server --watch db.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rashedrahat/simple-club-management-app-worksober-task-back-end.git"
+	},
+	"author": "Rashed Rahat",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/rashedrahat/simple-club-management-app-worksober-task-back-end/issues"
+	},
+	"homepage": "https://github.com/rashedrahat/simple-club-management-app-worksober-task-back-end#readme",
+	"dependencies": {
+		"json-server": "^0.17.0"
+	}
+}
