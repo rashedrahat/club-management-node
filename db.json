@@ -1,111 +1,188 @@
 {
-	"users": [
-		{ "id": 1, "userName": "admin", "password": "123456", "name": "Mr. Admin" },
-		{
-			"id": 2,
-			"userName": "rashed_rahat",
-			"password": "123456",
-			"name": "Rashed Rahat"
-		}
-	],
-	"clubs": [
-		{
-			"id": 1,
-			"slug": "golf-club",
-			"name": "Golf Club",
-			"imgURL": "data:image/jpeg;base64,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",
-			"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-			"createdAt": "10/03/2022"
-		},
-		{
-			"id": 2,
-			"slug": "football-club",
-			"name": "Football Club",
-			"imgURL": "https://images.indianexpress.com/2021/10/football.jpg",
-			"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-			"createdAt": "11/03/2022"
-		},
-		{
-			"id": 3,
-			"slug": "cricket-club",
-			"name": "Cricket Club",
-			"imgURL": "https://img.etimg.com/thumb/width-640,height-480,imgsize-492165,resizemode-1,msid-70676334/magazines/panache/howzzat-london-cricket-club-adopt-cruelty-free-living-introduces-vegan-ball/cricket-ball_istock.jpg",
-			"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-			"createdAt": "12/03/2022"
-		},
-		{
-			"id": 4,
-			"slug": "tennis-club",
-			"name": "Tennis Club",
-			"imgURL": "https://images.thedailystar.net/upload/gallery/image/arts/racket-ball.jpg",
-			"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-			"createdAt": "12/03/2022"
-		},
-		{
-			"id": 5,
-			"slug": "gym-club",
-			"name": "Gym Club",
-			"imgURL": "https://www.gymsource.com/media/original/commercial/markets/private-clubs-2.jpg",
-			"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-			"createdAt": "12/03/2022"
-		}
-	],
-	"members": [
-		{
-			"id": 1,
-			"name": "Rashed Rahat",
-			"avatar": "https://www.blexar.com/avatar.png",
-			"dob": "16/08/1995",
-			"joinedAt": "12/03/2022",
-			"skills": [
-				{
-					"technicalAbility": 90,
-					"mentality": 95
-				}
-			],
-			"clubId": 2
-		},
-		{
-			"id": 2,
-			"name": "Jhon doe",
-			"avatar": "https://static.toiimg.com/thumb/resizemode-4,msid-76729750,imgsize-249247,width-720/76729750.jpg",
-			"dob": "16/08/1994",
-			"joinedAt": "11/03/2022",
-			"skills": [
-				{
-					"technicalAbility": 60,
-					"mentality": 75
-				}
-			],
-			"clubId": 2
-		},
-		{
-			"id": 3,
-			"name": "Rashed Rahat",
-			"avatar": "https://static.toiimg.com/thumb/resizemode-4,msid-76729750,imgsize-249247,width-720/76729750.jpg",
-			"dob": "16/08/1995",
-			"joinedAt": "12/03/2022",
-			"skills": [
-				{
-					"technicalAbility": 90,
-					"mentality": 95
-				}
-			],
-			"clubId": 2
-		},
-		{
-			"id": 4,
-			"name": "Rashed Rahat",
-			"avatar": "https://static.toiimg.com/thumb/resizemode-4,msid-76729750,imgsize-249247,width-720/76729750.jpg",
-			"dob": "16/08/1995",
-			"joinedAt": "12/03/2022",
-			"skills": [
-				{
-					"technicalAbility": 90,
-					"mentality": 95
-				}
-			],
-			"clubId": 3
-		}
-	]
+  "users": [
+    {
+      "id": 1,
+      "userName": "admin",
+      "password": "123456",
+      "name": "Mr. Admin"
+    },
+    {
+      "id": 2,
+      "userName": "rashed_rahat",
+      "password": "123456",
+      "name": "Rashed Rahat"
+    }
+  ],
+  "clubs": [
+    {
+      "id": 1,
+      "slug": "golf-club",
+      "name": "Golf Club",
+      "imgURL": "data:image/jpeg;base64,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",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "createdAt": "2022-03-10"
+    },
+    {
+      "id": 2,
+      "slug": "football-club",
+      "name": "Football Club",
+      "imgURL": "https://images.indianexpress.com/2021/10/football.jpg",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "createdAt": "2022-03-11"
+    },
+    {
+      "id": 3,
+      "slug": "cricket-club",
+      "name": "Cricket Club",
+      "imgURL": "https://img.etimg.com/thumb/width-640,height-480,imgsize-492165,resizemode-1,msid-70676334/magazines/panache/howzzat-london-cricket-club-adopt-cruelty-free-living-introduces-vegan-ball/cricket-ball_istock.jpg",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "createdAt": "2022-03-12"
+    },
+    {
+      "id": 4,
+      "slug": "tennis-club",
+      "name": "Tennis Club",
+      "imgURL": "https://images.thedailystar.net/upload/gallery/image/arts/racket-ball.jpg",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "createdAt": "2022-03-13"
+    },
+    {
+      "id": 5,
+      "slug": "gym-club",
+      "name": "Gym Club",
+      "imgURL": "https://www.gymsource.com/media/original/commercial/markets/private-clubs-2.jpg",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "createdAt": "2022-03-14"
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "name": "Rashed Rahat",
+      "avatar": "https://www.blexar.com/avatar.png",
+      "dob": "1995-03-16",
+      "joinedAt": "2022-03-16",
+      "skills": [
+        {
+          "technicalAbility": 90
+        },
+        {
+          "mentality": 95
+        }
+      ],
+      "clubId": 2
+    },
+    {
+      "name": "Jhon doe",
+      "avatar": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/115490361/original/24750cc89e79244d350f49cac7097b68ba1215e4/create-a-cartoon-avatar-profile-pic.png",
+      "dob": "1995-03-16",
+      "joinedAt": "2022-03-17",
+      "skills": [
+        {
+          "technicalAbility": 90
+        },
+        {
+          "mentality": 80
+        }
+      ],
+      "clubId": 2,
+      "id": 2
+    },
+    {
+      "name": "Rashed Rahat",
+      "avatar": "https://files.upload.io/12a1xiFSzVLxSubfEeqiDRT",
+      "dob": "2022-03-16",
+      "joinedAt": "2022-03-16",
+      "skills": [
+        {
+          "technicalAbility": 90
+        },
+        {
+          "mentality": 95
+        }
+      ],
+      "clubId": 1,
+      "id": 5
+    },
+    {
+      "name": "David Warner",
+      "avatar": "https://files.upload.io/12a1xiFFrD3HKo2fkFar2Vz",
+      "dob": "1982-02-16",
+      "joinedAt": "2022-03-17",
+      "skills": [
+        {
+          "technicalAbility": 77
+        },
+        {
+          "mentality": 70
+        }
+      ],
+      "clubId": 3,
+      "id": 6
+    },
+    {
+      "name": "Jhon Sheey",
+      "avatar": "https://files.upload.io/12a1xiFHYU6aoGE2CXpsc5B",
+      "dob": "2000-02-16",
+      "joinedAt": "2022-03-17",
+      "skills": [
+        {
+          "technicalAbility": 65
+        },
+        {
+          "mentality": 40
+        }
+      ],
+      "clubId": 4,
+      "id": 7
+    },
+    {
+      "name": "Jack Head",
+      "avatar": "https://files.upload.io/12a1xiFLwZtDAqc6iduEgbj",
+      "dob": "1989-01-05",
+      "joinedAt": "2022-03-17",
+      "skills": [
+        {
+          "technicalAbility": 50
+        },
+        {
+          "mentality": 50
+        }
+      ],
+      "clubId": 5,
+      "id": 8
+    },
+    {
+      "name": "Hyo Ko",
+      "avatar": "https://files.upload.io/12a1xiF2WpAzmaymWceqYX5",
+      "dob": "2010-12-30",
+      "joinedAt": "2022-03-17",
+      "skills": [
+        {
+          "technicalAbility": 77
+        },
+        {
+          "mentality": 65
+        }
+      ],
+      "clubId": 2,
+      "id": 9
+    },
+    {
+      "name": "Rashed Rahat",
+      "avatar": "https://files.upload.io/12a1xiFLBkrkSYwUf1JN3FM",
+      "dob": "1995-07-01",
+      "joinedAt": "2022-03-17",
+      "skills": [
+        {
+          "technicalAbility": 95
+        },
+        {
+          "mentality": 71
+        }
+      ],
+      "clubId": 1,
+      "id": 10
+    }
+  ]
 }
