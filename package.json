@@ -9,18 +9,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/rashedrahat/simple-club-management-app-worksober-task-back-end.git"
+		"url": "git+https://github.com/rashedrahat/club-management-node.git"
 	},
 	"author": "Rashed Rahat",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/rashedrahat/simple-club-management-app-worksober-task-back-end/issues"
+		"url": "https://github.com/rashedrahat/club-management-node.git/issues"
 	},
-	"homepage": "https://github.com/rashedrahat/simple-club-management-app-worksober-task-back-end#readme",
+	"homepage": "https://github.com/rashedrahat/club-management-node.git#readme",
 	"dependencies": {
 		"json-server": "^0.17.0"
 	},
 	"engines": {
-		"node": "16.x"
+		"node": "16.13.1"
 	}
 }
